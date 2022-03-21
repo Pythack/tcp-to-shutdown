@@ -1,6 +1,6 @@
 use core::panic;
 use std::env;
-use std::net::{TcpListener, TcpStream};
+use std::net::TcpListener;
 use std::process::Command;
 use structopt::StructOpt;
 use tcpts::Opt;
@@ -13,14 +13,13 @@ fn main() {
         "windows" => "shutdown /p",
         _ => "",
     };
-    run_command(command.to_string());
     let opt = Opt::from_args();
     let listener = TcpListener::bind(String::from("127.0.0.1:") + &opt.port);
 
     if listener.is_ok() {
         let listener = listener.unwrap();
         for _ in listener.incoming() {
-            println!("Request received");
+            run_command(command.to_string());
         }
     } else {
         println!("Port not supported");
