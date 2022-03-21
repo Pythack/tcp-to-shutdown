@@ -1,9 +1,12 @@
 [package]
-name = "tcp-to-shutdown"
+name = "tcpts"
 version = "0.1.0"
 edition = "2021"
+[[bin]]
+name = "tcpts"
+path = "./src/main.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-os_type="2.4.0"
+structopt = { version = "0.3.26", default-features = false }
