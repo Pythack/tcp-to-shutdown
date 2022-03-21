@@ -1,4 +1,3 @@
-use core::panic;
 use std::env;
 
 use std::net::TcpListener;
