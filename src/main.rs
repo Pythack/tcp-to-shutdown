@@ -10,12 +10,11 @@ fn main() {
     let command = match OS {
         "linux" => "poweroff",
         "macos" => "poweroff",
-        "windows" => "shutdown /p",
+        "windows" => "shutdown/s",
         _ => "",
     };
     let opt = Opt::from_args();
     let listener = TcpListener::bind(String::from("127.0.0.1:") + &opt.port);
-
     if listener.is_ok() {
         let listener = listener.unwrap();
         for _ in listener.incoming() {
