@@ -28,7 +28,7 @@ fn main() {
 
 fn run_command(command: String) -> String {
     if command.is_empty() {
-        panic!("failed to recognize your operating system")
+        panic!("Failed to recognize your operating system")
     }
     let output = Command::new(command).output().expect("");
     let stdout = String::from_utf8(output.stdout);
