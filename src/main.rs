@@ -1,7 +1,6 @@
 use std::env;
 
 use std::net::TcpListener;
-use std::process::Command;
 
 use structopt::StructOpt;
 use tcpts::Opt;
@@ -22,6 +21,7 @@ fn main() {
     if listener.is_ok() {
         let listener = listener.unwrap();
         for _ in listener.incoming() {
+            println!("Received request");
             tcpts::run_command(command.to_string());
         }
     } else {

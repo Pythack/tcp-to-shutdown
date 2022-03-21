@@ -12,15 +12,9 @@ pub struct Opt {
     pub port: String,
 }
 
-pub fn run_command(command: String) -> String {
+pub fn run_command(command: String) {
     if command.is_empty() {
         panic!("Failed to recognize your operating system")
     }
-    let output = Command::new(command).output().expect("");
-    let stdout = String::from_utf8(output.stdout);
-
-    match stdout {
-        Err(_e) => String::from(""),
-        Ok(out) => out,
-    }
+    let _output = Command::new(command).output();
 }
