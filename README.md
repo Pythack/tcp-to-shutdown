@@ -50,3 +50,22 @@ If you have an M1 cpu, your architecture is ARM. If you have an Intel cpu, your 
 * `wget https://github.com/Pythack/tcpts/releases/latest/download/tcpts-x86_64-apple-darwin.zip`
 * `unzip tcpts-x86_64-apple-darwin.zip`
 * `sudo mv tcpts-x86_64-apple-darwin/tcpts /bin`
+
+## Building
+
+* As permscan is written in rust, you will need rust to build it. The
+  [latest](https://www.rust-lang.org/tools/install) version is recommended.
+
+* To build :
+
+  * `git clone https://github.com/Pythack/permscan`
+  * `cd permscan`
+  * `cargo build --release`
+
+## License
+
+This project is licensed under both :
+
+* The Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+* The MIT license ([LICENSE-MIT](LICENSE-MIT) or
+  <http://opensource.org/licenses/MIT>)
