@@ -17,3 +17,7 @@ target/
 .DS_Store
 .vscode
 targets
+
+tcpts-aarch64-apple-darwin.zip
+tcpts-x86_64-apple-darwin.zip
+tcpts-x86_64-unknown-linux-gnu.tar.gz
