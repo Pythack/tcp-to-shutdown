@@ -2,7 +2,7 @@
 
 Shutdown computer on request on given port. Default is 80.
 
-## Usage
+## Help
 
 ```console
 TCP to shutdown 0.1.0
