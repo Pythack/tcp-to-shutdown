@@ -26,3 +26,27 @@ ARGS:
 
 Run the binary and then send a request to the specified localhost port (default: 80) to shut down
 your PC. On macOS, you will need to run it as super user.
+
+## Installation
+
+### GNU/Linux
+
+* `wget https://github.com/Pythack/tcpts/releases/latest/download/tcpts-x86_64-unknown-linux-gnu.tar.gz`
+* `tar -xzvf tcpts-x86_64-unknown-linux-gnu.tar.gz`
+* `sudo mv tcpts-x86_64-unknown-linux-gnu/tcpts /bin`
+
+### MacOS
+
+If you have an M1 cpu, your architecture is ARM. If you have an Intel cpu, your architecture is x86_64
+
+#### ARM
+
+* `wget https://github.com/Pythack/tcpts/releases/latest/download/tcpts-aarch64-apple-darwin.zip`
+* `tar -xzvf tcpts-aarch64-apple-darwin.zip`
+* `sudo mv tcpts-aarch64-apple-darwin/tcpts /bin`
+
+#### x86_64
+
+* `wget https://github.com/Pythack/tcpts/releases/latest/download/tcpts-x86_64-apple-darwin.zip`
+* `tar -xzvf tcpts-x86_64-apple-darwin.zip`
+* `sudo mv tcpts-x86_64-apple-darwin/tcpts /bin`
