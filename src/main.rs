@@ -10,6 +10,7 @@ fn main() {
     let opt = Opt::from_args();
     let listener = TcpListener::bind(String::from("127.0.0.1:") + &opt.port);
     if let Ok(listener) = listener {
+        println!("Listening on port {}", &opt.port);
         for _ in listener.incoming() {
             println!("Received request");
             thread::sleep(time::Duration::from_secs(opt.delay));
