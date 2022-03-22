@@ -9,8 +9,7 @@ use tcpts::Opt;
 fn main() {
     let opt = Opt::from_args();
     let listener = TcpListener::bind(String::from("127.0.0.1:") + &opt.port);
-    if listener.is_ok() {
-        let listener = listener.unwrap();
+    if let Ok(listener) = listener {
         for _ in listener.incoming() {
             println!("Received request");
             thread::sleep(time::Duration::from_secs(opt.delay));
