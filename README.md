@@ -42,11 +42,11 @@ If you have an M1 cpu, your architecture is ARM. If you have an Intel cpu, your 
 #### ARM
 
 * `wget https://github.com/Pythack/tcpts/releases/latest/download/tcpts-aarch64-apple-darwin.zip`
-* `tar -xzvf tcpts-aarch64-apple-darwin.zip`
+* `unzip tcpts-aarch64-apple-darwin.zip`
 * `sudo mv tcpts-aarch64-apple-darwin/tcpts /bin`
 
 #### x86_64
 
 * `wget https://github.com/Pythack/tcpts/releases/latest/download/tcpts-x86_64-apple-darwin.zip`
-* `tar -xzvf tcpts-x86_64-apple-darwin.zip`
+* `unzip tcpts-x86_64-apple-darwin.zip`
 * `sudo mv tcpts-x86_64-apple-darwin/tcpts /bin`
