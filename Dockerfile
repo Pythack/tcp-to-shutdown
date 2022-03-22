@@ -5,4 +5,4 @@ WORKDIR /tcpts
 COPY ./Cargo.toml ./
 COPY ./src/ ./src
 
-#RUN cargo build
+RUN cargo build
