@@ -1,2 +1,3 @@
-# tcp-to-shutdown
- Shutdown computer on request on given port
+# tcpts
+
+Shutdown computer on request on given port. Default is 80.
