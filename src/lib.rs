@@ -1,5 +1,3 @@
-use core::panic;
-use std::process::Command;
 use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
@@ -10,11 +8,12 @@ use structopt::StructOpt;
 pub struct Opt {
     #[structopt(help = "Specify the port to listen on", default_value = "80")]
     pub port: String,
-}
 
-pub fn run_command(command: String) {
-    if command.is_empty() {
-        panic!("Failed to recognize your operating system")
-    }
-    let _output = Command::new(command).output();
+    #[structopt(
+        short,
+        long,
+        help = "Specify the delay between request and shutdown in seconds",
+        default_value = "0"
+    )]
+    pub delay: u64,
 }
